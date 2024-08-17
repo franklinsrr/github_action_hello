@@ -8,9 +8,7 @@ jobs:
     comment-with-actions:
       runs-on: ubuntu-latest
       permissions:
-        contents: write
-        pull-requests: write
-        repository-projects: write
+        issues: write
       steps:
         - name: "dump github context"
           run: echo '${{ toJSON(github.event) }}' | jq
