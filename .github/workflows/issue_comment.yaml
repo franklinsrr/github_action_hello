@@ -32,7 +32,7 @@ jobs:
           run: |
             gh api -X POST \
               http://api.github.com/repo/${ORGANIZATION}/${REPOSITORY}/issue/${ISSUE_NUMBER}/comments \
-              - f body='
+              -f body='
               Comment but from the api call not action
               '
           env:
